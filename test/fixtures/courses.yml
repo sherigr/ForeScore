@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  reviews: MyString
+  teetime: MyString
+
+two:
+  location: MyString
+  reviews: MyString
+  teetime: MyString
