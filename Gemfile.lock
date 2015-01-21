@@ -40,6 +40,7 @@ GEM
     arel (6.0.0)
     backbars (0.0.11)
       handlebars_assets
+    bcrypt (3.1.9)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -170,6 +171,7 @@ PLATFORMS
 
 DEPENDENCIES
   backbars
+  bcrypt (~> 3.1.7)
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)

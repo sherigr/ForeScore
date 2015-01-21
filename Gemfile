@@ -28,7 +28,7 @@ gem 'pry-rails'
 gem 'backbars'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -50,3 +50,8 @@ end
 
 gem 'rails-assets-underscore', source: 'https://rails-assets.org'
 gem 'rails-assets-backbone', source: 'https://rails-assets.org'
+
+
+
+
+

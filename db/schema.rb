@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150120193352) do
+ActiveRecord::Schema.define(version: 20150120221555) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(version: 20150120193352) do
     t.string   "teetime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "address1"
+    t.string   "city"
+    t.string   "country"
+    t.string   "name"
+    t.string   "phone"
+    t.string   "state"
+    t.string   "TimeZone"
+    t.string   "ZipCode"
   end
 
   create_table "scorecards", force: :cascade do |t|
