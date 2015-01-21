@@ -1,5 +1,6 @@
 <div id="new-scorecard">
-<%= form_for (@scorecard) do |f| %>
+<%= form_for (@scorecard) do |f| %> <br>
+
 
 	<%= f.label :date %><br>
 	<%= f.text_field :date %><br>
@@ -7,87 +8,94 @@
 	<%= f.label :courseplayed  %><br>
 	<%= f.text_field :courseplayed %><br>
 
+<div class="top-row">
 	<%= f.label :hole1  %><br>
-	<%= text_field_tag :hole1, maxlength: 2 %><br>
-	<%= text_field_tag :par1, maxlength: 1 %><br>
+	<%= number_field_tag :hole1 %><br>
+	<%= number_field_tag :par1 %><br>
 
+<div class="top-row">
 	<%= f.label :hole2  %><br>
-	<%= text_field_tag :hole2, maxlength: 2 %><br>
-	<%= text_field_tag :par2, maxlength: 1 %><br>
+	<%= number_field_tag :hole2 %><br>
+	<%= number_field_tag :par2 %><br>
 
 	<%= f.label :hole3  %><br>
-	<%= text_field_tag :hole3, maxlength: 2 %><br>
-	<%= text_field_tag :par3, maxlength: 1 %><br>
+	<%= number_field_tag :hole3 %><br>
+	<%= number_field_tag :par3 %><br>
 
 	<%= f.label :hole4  %><br>
-	<%= text_field_tag :hole4, maxlength: 2 %><br>
-	<%= text_field_tag :par4, maxlength: 1 %><br>
+	<%= number_field_tag :hole4 %><br>
+	<%= number_field_tag :par4 %><br>
 
 	<%= f.label :hole5  %><br>
-	<%= text_field_tag :hole5, maxlength: 2 %><br>
-	<%= text_field_tag :par5, maxlength: 1 %><br>
+	<%= number_field_tag :hole5 %><br>
+	<%= number_field_tag :par5 %><br>
 
 	<%= f.label :hole6  %><br>
-	<%= text_field_tag :hole6 maxlength: 2 %><br>
-	<%= text_field_tag :par6, maxlength: 1 %><br>
+	<%= number_field_tag :hole6 %><br>
+	<%= number_field_tag :par6 %><br>
 
 	<%= f.label :hole7  %><br>
-	<%= text_field_tag :hole7, maxlength: 2 %><br>
-	<%= text_field_tag :par7, maxlength: 1 %><br>
+	<%= number_field_tag :hole7 %><br>
+	<%= number_field_tag :par7 %><br>
 
 	<%= f.label :hole8  %><br>
-	<%= text_field_tag :hole8, maxlength: 2 %><br>
-	<%= text_field_tag :par8, maxlength: 1 %><br>
+	<%= number_field_tag :hole8 %><br>
+	<%= number_field_tag :par8  %><br>
 
 	<%= f.label :hole9  %><br>
-	<%= text_field_tag :hole9, maxlength: 2 %><br>
-	<%= text_field_tag :par9, maxlength: 1 %><br>
+	<%= number_field_tag :hole9 %><br>
+	<%= number_field_tag :par9 %><br>
+</td>
+</div>
 
-	<%= f.label :hole10  %><br>
-	<%= text_field_tag :hole10, maxlength: 2 %><br>
-	<%= text_field_tag :par10, maxlength: 1 %><br>
+<%= f.label :hole10  %><br>
+	<%= number_field_tag :hole10, maxlength: 2 %><br>
+	<%= number_field_tag :par10, maxlength: 1 %><br>
 
 	<%= f.label :hole11  %><br>
-	<%= text_field_tag :hole11, maxlength: 2 %><br>
-	<%= text_field_tag :par11, maxlength: 1 %><br>
+	<%= number_field_tag :hole11, maxlength: 2 %><br>
+	<%= number_field_tag :par11, maxlength: 1 %><br>
 
 	<%= f.label :hole12  %><br>
-	<%= text_field_tag :hole12, maxlength: 2 %><br>
-	<%= text_field_tag :par12, maxlength: 1 %><br>
+	<%= number_field_tag :hole12, maxlength: 2 %><br>
+	<%= number_field_tag :par12, maxlength: 1 %><br>
 
 	<%= f.label :hole13  %><br>
-	<%= text_field_tag :hole13, maxlength: 2 %><br>
-	<%= text_field_tag :par13, maxlength: 1 %><br>
+	<%= number_field_tag :hole13, maxlength: 2 %><br>
+	<%= number_field_tag :par13, maxlength: 1 %><br>
 
 	<%= f.label :hole14  %><br>
-	<%= text_field_tag :hole14, maxlength: 2 %><br>
-	<%= text_field_tag :par14, maxlength: 1 %><br>
+	<%= number_field_tag :hole14, maxlength: 2 %><br>
+	<%= number_field_tag :par14, maxlength: 1 %><br>
 
 	<%= f.label :hole15  %><br>
-	<%= text_field_tag :hole15, maxlength: 2 %><br>
-	<%= text_field_tag :par15, maxlength: 1 %><br>
+	<%= number_field_tag :hole15, maxlength: 2 %><br>
+	<%= number_field_tag :par15, maxlength: 1 %><br>
 
 	<%= f.label :hole16  %><br>
-	<%= text_field_tag :hole16, maxlength: 2 %><br>
-	<%= text_field_tag :par16, maxlength: 1 %><br>
+	<%= number_field_tag :hole16, maxlength: 2 %><br>
+	<%= number_field_tag :par16, maxlength: 1 %><br>
 
 	<%= f.label :hole17  %><br>
-	<%= text_field_tag :hole17, maxlength: 2 %><br>
-	<%= text_field_tag :par17, maxlength: 1 %><br>
+	<%= number_field_tag :hole17, maxlength: 2 %><br>
+	<%= number_field_tag :par17, maxlength: 1 %><br>
 
 	<%= f.label :hole18  %><br>
-	<%= text_field_tag :hole18, maxlength: 2 %><br>
-	<%= text_field_tag :par8, maxlength: 1 %><br>
+	<%= number_field_tag :hole18, maxlength: 2 %><br>
+	<%= number_field_tag :par8, maxlength: 1 %><br>
 
 	<%= f.label :total  %><br>
-	<%= text_field_tag :total, maxlength: 2 %><br>
-	<%= text_field_tag :TotalPar, maxlength: 1 %><br>
+	<%= number_field_tag :total, maxlength: 2 %><br>
+	<%= number_field_tag :TotalPar, maxlength: 1 %><br>
 
+
+	<br>
 	<%= f.submit %>
 
 <% end %>
+</div>
 
-
+</div>
 
 
 
