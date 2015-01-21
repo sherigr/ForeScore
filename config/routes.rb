@@ -1,41 +1,48 @@
 Rails.application.routes.draw do
-  get 'courses/index'
+  root 'application#index'
+  resources :scorecards
+  resources :users
+  resources :courses
 
-  get 'courses/show'
+end
 
-  get 'courses/new'
+  # get 'courses/index'
 
-  get 'courses/create'
+  # get 'courses/show'
 
-  get 'courses/edit'
+  # get 'courses/new'
 
-  get 'courses/update'
+  # get 'courses/create'
 
-  get 'courses/destroy'
+  # get 'courses/edit'
 
-  get 'scorecards/index'
+  # get 'courses/update'
 
-  get 'scorecards/show'
+  # get 'courses/destroy'
 
-  get 'scorecards/new'
+  # get 'scorecards/index'
 
-  get 'scorecards/create'
+  # get 'scorecards/show'
 
-  get 'scorecards/edit'
+  # get 'scorecards/new'
 
-  get 'scorecards/update'
+  # get 'scorecards/create'
 
-  get 'scorecards/destroy'
+  # get 'scorecards/edit'
 
-  get 'users/index'
+  # get 'scorecards/update'
 
-  get 'users/new'
+  # get 'scorecards/destroy'
 
-  get 'users/create'
+  # get 'users/index'
 
-  get 'users/edit'
+  # get 'users/new'
 
-  get 'users/destroy'
+  # get 'users/create'
+
+  # get 'users/edit'
+
+  # get 'users/destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -91,4 +98,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+

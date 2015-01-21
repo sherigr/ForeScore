@@ -19,12 +19,27 @@ class ScorecardsController < ApplicationController
   end
 
   def edit
+    @scorecard = Scorecard.find(params[:id])
+    render :edit
   end
+
+  # def update
+  #   @scorecard = Scorecard.find(params[:id])
+  #   @scorecard.update(scorecard_params)
+  #   render json: @scorecard
+  # end
 
   def update
     @scorecard = Scorecard.find(params[:id])
-    @scorecard.update(scorecard_params)
-    render json: @scorecard
+    respond_to do |format|
+      if @scorecard.update(scorecard_params)
+        format.html { redirect_to scorecard_path(@scorecard) }
+        format.json {render json: @scorecard}
+      else
+        format.html { render :edit }
+        format.json {render json: @scorecard }
+      end
+    end
   end
 
   def destroy

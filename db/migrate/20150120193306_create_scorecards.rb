@@ -22,24 +22,24 @@ class CreateScorecards < ActiveRecord::Migration
       t.integer :hole17
       t.integer :hole18
       t.integer :total
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
-      t.integer :par
+      t.integer :par1
+      t.integer :par2
+      t.integer :par3
+      t.integer :par4
+      t.integer :par5
+      t.integer :par6
+      t.integer :par7
+      t.integer :par8
+      t.integer :par9
+      t.integer :par10
+      t.integer :par11
+      t.integer :par12
+      t.integer :par13
+      t.integer :par14
+      t.integer :par15
+      t.integer :par16
+      t.integer :par17
+      t.integer :par18
       t.integer :TotalPar
 
       t.timestamps null: false

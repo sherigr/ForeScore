@@ -13,7 +13,6 @@
 	<%= number_field_tag :hole1 %><br>
 	<%= number_field_tag :par1 %><br>
 
-<div class="top-row">
 	<%= f.label :hole2  %><br>
 	<%= number_field_tag :hole2 %><br>
 	<%= number_field_tag :par2 %><br>
@@ -48,6 +47,7 @@
 </td>
 </div>
 
+<div class="bottom-row">
 <%= f.label :hole10  %><br>
 	<%= number_field_tag :hole10, maxlength: 2 %><br>
 	<%= number_field_tag :par10, maxlength: 1 %><br>
@@ -87,13 +87,12 @@
 	<%= f.label :total  %><br>
 	<%= number_field_tag :total, maxlength: 2 %><br>
 	<%= number_field_tag :TotalPar, maxlength: 1 %><br>
-
-
 	<br>
+</div>
 	<%= f.submit %>
 
 <% end %>
-</div>
+
 
 </div>
 

@@ -1,2 +1,10 @@
-<h1>Scorecards#index</h1>
-<p>Find me in app/views/scorecards/index.html.erb</p>
+<h1>Scorecards</h1>
+<%= link_to 'New Scorecard', new_scorecard_path %>
+<%= link_to 'Edit Scorecard', edit_scorecard_path %>
+
+<% @scorecard.each do |card| %>
+<div class="scorecards" data-id="<%= card.id %>">"
+
+	<% end %>
+
+	<br>
