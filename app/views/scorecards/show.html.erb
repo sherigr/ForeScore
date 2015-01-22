@@ -1,5 +1,49 @@
-<h1>Scorecards#show</h1>
+<h1>Scorecard</h1>
 
-<%= render @scorecard %> 
+<%= @scorecard.date %><br>
+<%= @scorecard.courseplayed %><br>
+<hr>
+<%= @scorecard.hole1 %><br>
+<%= @scorecard.par1 %><br>
+<%= @scorecard.hole2 %><br>
+<%= @scorecard.par2 %><br>
+<%= @scorecard.hole3 %><br>
+<%= @scorecard.par3 %><br>
+<%= @scorecard.hole4 %><br>
+<%= @scorecard.par4 %><br>
+<%= @scorecard.hole5 %><br>
+<%= @scorecard.par5 %><br>
+<%= @scorecard.hole6 %><br>
+<%= @scorecard.par6 %><br>
+<%= @scorecard.hole7 %><br>
+<%= @scorecard.par7 %><br>
+<%= @scorecard.hole8 %><br>
+<%= @scorecard.par8 %><br>
+<%= @scorecard.hole9 %><br>
+<%= @scorecard.par9 %><br>
+<%= @scorecard.hole10 %><br>
+<%= @scorecard.par10 %><br>
+<%= @scorecard.hole11 %><br>
+<%= @scorecard.par11 %><br>
+<%= @scorecard.hole12 %><br>
+<%= @scorecard.par12 %><br>
+<%= @scorecard.hole13 %><br>
+<%= @scorecard.par13 %><br>
+<%= @scorecard.hole14 %><br>
+<%= @scorecard.par14 %><br>
+<%= @scorecard.hole15 %><br>
+<%= @scorecard.par15 %><br>
+<%= @scorecard.hole16 %><br>
+<%= @scorecard.par16 %><br>
+<%= @scorecard.hole17 %><br>
+<%= @scorecard.par17 %><br>
+<%= @scorecard.hole18 %><br>
+<%= @scorecard.par18 %><br>
+<%= @scorecard.total %><br>
+<%= @scorecard.TotalPar%><br>
 
-<!-- update button leads to error. render what? -->
+
+<br>
+<%= link_to 'Edit', edit_scorecard_path(@scorecard) %>
+<%= link_to 'Back', scorecards_path %>
+<%= link_to 'Home', root_path %>
