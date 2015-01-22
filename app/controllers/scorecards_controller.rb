@@ -15,7 +15,7 @@ class ScorecardsController < ApplicationController
   # end
  
   def index
-    @scorecards = Scorecard.order(:created_at :desc)
+    @scorecards = Scorecard.order(created_at: :desc)
   end
 
   def show
@@ -35,7 +35,11 @@ class ScorecardsController < ApplicationController
 
   def edit
     @scorecard = Scorecard.find(params[:id])
+    if @scorecard.user != current_user
+      redirect_to @scorecard
+    else
     render :edit
+    end
   end
 
   # def update
