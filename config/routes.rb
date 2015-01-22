@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   resources :users
   resources :courses
 
+  get 'sessions/new' => 'sessions#new', as: 'login'
+  post 'sessions'    => 'sessions#create'
+  delete 'sessions'  => 'sessions#destroy'
+
 end
 
   # get 'courses/index'

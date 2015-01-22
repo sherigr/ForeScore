@@ -1,47 +1,91 @@
 <h1>Scorecard</h1>
 
+<div class="play-info">
 <%= @scorecard.date %><br>
 <%= @scorecard.courseplayed %><br>
+</div>
 <hr>
-<%= @scorecard.hole1 %><br>
-<%= @scorecard.par1 %><br>
-<%= @scorecard.hole2 %><br>
-<%= @scorecard.par2 %><br>
-<%= @scorecard.hole3 %><br>
-<%= @scorecard.par3 %><br>
-<%= @scorecard.hole4 %><br>
-<%= @scorecard.par4 %><br>
-<%= @scorecard.hole5 %><br>
-<%= @scorecard.par5 %><br>
-<%= @scorecard.hole6 %><br>
-<%= @scorecard.par6 %><br>
-<%= @scorecard.hole7 %><br>
-<%= @scorecard.par7 %><br>
-<%= @scorecard.hole8 %><br>
-<%= @scorecard.par8 %><br>
-<%= @scorecard.hole9 %><br>
-<%= @scorecard.par9 %><br>
-<%= @scorecard.hole10 %><br>
-<%= @scorecard.par10 %><br>
-<%= @scorecard.hole11 %><br>
-<%= @scorecard.par11 %><br>
-<%= @scorecard.hole12 %><br>
-<%= @scorecard.par12 %><br>
-<%= @scorecard.hole13 %><br>
-<%= @scorecard.par13 %><br>
-<%= @scorecard.hole14 %><br>
-<%= @scorecard.par14 %><br>
-<%= @scorecard.hole15 %><br>
-<%= @scorecard.par15 %><br>
-<%= @scorecard.hole16 %><br>
-<%= @scorecard.par16 %><br>
-<%= @scorecard.hole17 %><br>
-<%= @scorecard.par17 %><br>
-<%= @scorecard.hole18 %><br>
-<%= @scorecard.par18 %><br>
-<%= @scorecard.total %><br>
-<%= @scorecard.TotalPar%><br>
 
+<div class="top-row">
+	<div id="hole-1">
+	<%= @scorecard.hole1 %><br>
+	<%= @scorecard.par1 %><br>
+	</div>
+	<div id="hole-2">
+	<%= @scorecard.hole2 %><br>
+	<%= @scorecard.par2 %><br>
+	</div>
+	<div id="hole-3">
+	<%= @scorecard.hole3 %><br>
+	<%= @scorecard.par3 %><br>
+	</div>
+	<div id="hole-4">
+	<%= @scorecard.hole4 %><br>
+	<%= @scorecard.par4 %><br>
+	</div>
+	<div id="hole-5">
+	<%= @scorecard.hole5 %><br>
+	<%= @scorecard.par5 %><br>
+	</div>
+	<div id="hole-6">
+	<%= @scorecard.hole6 %><br>
+	<%= @scorecard.par6 %><br>
+	</div>
+	<div id="hole-7">
+	<%= @scorecard.hole7 %><br>
+	<%= @scorecard.par7 %><br>
+	</div>
+	<div id="hole-8">
+	<%= @scorecard.hole8 %><br>
+	<%= @scorecard.par8 %><br>
+	</div>
+	<div id="hole-9">
+	<%= @scorecard.hole9 %><br>
+	<%= @scorecard.par9 %><br>
+	</div>
+
+	<div class="bottom-row">
+	<div id="hole-10">
+	<%= @scorecard.hole10 %><br>
+	<%= @scorecard.par10 %><br>
+	</div>
+	<div id="hole-11">
+	<%= @scorecard.hole11 %><br>
+	<%= @scorecard.par11 %><br>
+	</div>
+	<div id="hole-12">
+	<%= @scorecard.hole12 %><br>
+	<%= @scorecard.par12 %><br>
+	</div>
+	<div id="hole-13">
+	<%= @scorecard.hole13 %><br>
+	<%= @scorecard.par13 %><br>
+	</div>
+	<div id="hole-14">
+	<%= @scorecard.hole14 %><br>
+	<%= @scorecard.par14 %><br>
+	</div>
+	<div id="hole-15">
+	<%= @scorecard.hole15 %><br>
+	<%= @scorecard.par15 %><br>
+	</div>
+	<div id="hole-16">
+	<%= @scorecard.hole16 %><br>
+	<%= @scorecard.par16 %><br>
+	</div>
+	<div id="hole-17">
+	<%= @scorecard.hole17 %><br>
+	<%= @scorecard.par17 %><br>
+	</div>
+	<div id="hole-18">
+	<%= @scorecard.hole18 %><br>
+	<%= @scorecard.par18 %><br>
+	</div>
+	<div id="all-holes">
+	<%= @scorecard.total %><br>
+	<%= @scorecard.TotalPar%><br>
+	</div>
+</div>
 
 <br>
 <%= link_to 'Edit', edit_scorecard_path(@scorecard) %>

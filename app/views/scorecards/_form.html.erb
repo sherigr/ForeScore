@@ -3,112 +3,150 @@
 
 <div class="play-info">
 	<%= f.label :date %></td><br>
-	<%= f.text_field :date %><br>
+	<%= f.date_field :date %><br>
 
 	<%= f.label "Course Played"  %><br>
 	<%= f.text_field :courseplayed %><br>
 </div>
 	<hr>
 
-<div class="top-row">
-	<%= f.label :hole_1  %><br>
-	<%= f.text_field :hole1 %><br>
-	<%= f.label :par_1 %><br>
-	<%= f.text_field :par1 %><br>
+	<div class="top-row">
+		<div id="hole-1">
+		<%= f.label :hole_1  %><br>
+		<%= f.text_field :hole1 %><br>
+		<%= f.label :par_1 %><br>
+		<%= f.text_field :par1 %><br>
+		</div>
+	
 
-	<%= f.label :hole_2  %><br>
-	<%= f.text_field :hole2 %><br>
-	<%= f.label :par_2 %><br>
-	<%= f.text_field :par2 %><br>
+		<div id="hole-2">
+		<%= f.label :hole_2  %><br>
+		<%= f.text_field :hole2 %><br>
+		<%= f.label :par_2 %><br>
+		<%= f.text_field :par2 %><br>
+		</div>
 
-	<%= f.label :hole_3  %><br>
-	<%= f.text_field :hole3 %><br>
-	<%= f.label :par_3 %><br>
-	<%= f.text_field :par3 %><br>
+		<div id="hole-3">
+		<%= f.label :hole_3  %><br>
+		<%= f.text_field :hole3 %><br>
+		<%= f.label :par_3 %><br>
+		<%= f.text_field :par3 %><br>
+		</div>
 
-	<%= f.label :hole_4  %><br>
-	<%= f.text_field :hole4 %><br>
-	<%= f.label :par_4 %><br>
-	<%= f.text_field :par4 %><br>
+		<div id="hole-4">
+		<%= f.label :hole_4  %><br>
+		<%= f.text_field :hole4 %><br>
+		<%= f.label :par_4 %><br>
+		<%= f.text_field :par4 %><br>
+		</div>
 
-	<%= f.label :hole_5  %><br>
-	<%= f.text_field :hole5 %><br>
-	<%= f.label :par_5 %><br>
-	<%= f.text_field :par5 %><br>
+		<div id="hole-5">
+		<%= f.label :hole_5  %><br>
+		<%= f.text_field :hole5 %><br>
+		<%= f.label :par_5 %><br>
+		<%= f.text_field :par5 %><br>
+		</div>
 
-	<%= f.label :hole_6  %><br>
-	<%= f.text_field :hole6 %><br>
-	<%= f.label :par_6 %><br>
-	<%= f.text_field :par6 %><br>
+		<div id="hole-6">
+		<%= f.label :hole_6  %><br>
+		<%= f.text_field :hole6 %><br>
+		<%= f.label :par_6 %><br>
+		<%= f.text_field :par6 %><br>
+		</div>
 
-	<%= f.label :hole_7  %><br>
-	<%= f.text_field :hole7 %><br>
-	<%= f.label :par_7 %><br>
-	<%= f.text_field :par7 %><br>
+		<div id="hole-7">
+		<%= f.label :hole_7  %><br>
+		<%= f.text_field :hole7 %><br>
+		<%= f.label :par_7 %><br>
+		<%= f.text_field :par7 %><br>
+		</div>
 
-	<%= f.label :hole_8  %><br>
-	<%= f.text_field :hole8 %><br>
-	<%= f.label :par_8 %><br>
-	<%= f.text_field :par8  %><br>
+		<div id="hole-8">
+		<%= f.label :hole_8  %><br>
+		<%= f.text_field :hole8 %><br>
+		<%= f.label :par_8 %><br>
+		<%= f.text_field :par8  %><br>
+		</div>
 
-	<%= f.label :hole_9  %><br>
-	<%= f.text_field :hole9 %><br>
-	<%= f.label :par_9 %><br>
-	<%= f.text_field :par9 %><br>
-</tr>
+		<div id="hole-9">
+		<%= f.label :hole_9  %><br>
+		<%= f.text_field :hole9 %><br>
+		<%= f.label :par_9 %><br>
+		<%= f.text_field :par9 %><br>
+		</div>
 </div>
 
 <div class="bottom-row">
-<%= f.label :hole_10  %><br>
-	<%= f.text_field :hole10 %><br>
-	<%= f.label :par_10 %><br>
-	<%= f.text_field :par10 %><br>
+		<div id="hole-10">
+		<%= f.label :hole_10  %><br>
+		<%= f.text_field :hole10 %><br>
+		<%= f.label :par_10 %><br>
+		<%= f.text_field :par10 %><br>
+		</div>
 
-	<%= f.label :hole_11  %><br>
-	<%= f.text_field :hole11 %><br>
-	<%= f.label :par_11 %><br>
-	<%= f.text_field :par11 %><br>
+	<div id="hole-11">
+		<%= f.label :hole_11  %><br>
+		<%= f.text_field :hole11 %><br>
+		<%= f.label :par_11 %><br>
+		<%= f.text_field :par11 %><br>
+	</div>
 
-	<%= f.label :hole_12  %><br>
-	<%= f.text_field :hole12 %><br>
-	<%= f.label :par_12 %><br>
-	<%= f.text_field :par12 %><br>
+	<div id="hole-12">
+		<%= f.label :hole_12  %><br>
+		<%= f.text_field :hole12 %><br>
+		<%= f.label :par_12 %><br>
+		<%= f.text_field :par12 %><br>
+	</div>
 
-	<%= f.label :hole_13  %><br>
-	<%= f.text_field :hole13 %><br>
-	<%= f.label :par_13 %><br>
-	<%= f.text_field :par13 %><br>
+	<div id="hole-13">
+		<%= f.label :hole_13  %><br>
+		<%= f.text_field :hole13 %><br>
+		<%= f.label :par_13 %><br>
+		<%= f.text_field :par13 %><br>
+	</div>
 
-	<%= f.label :hole_14  %><br>
-	<%= f.text_field :hole14 %><br>
-	<%= f.label :par_14 %><br>
-	<%= f.text_field :par14 %><br>
+	<div id="hole-14">
+		<%= f.label :hole_14  %><br>
+		<%= f.text_field :hole14 %><br>
+		<%= f.label :par_14 %><br>
+		<%= f.text_field :par14 %><br>
+	</div>
 
-	<%= f.label :hole_15  %><br>
-	<%= f.text_field :hole15 %><br>
-	<%= f.label :par_15 %><br>
-	<%= f.text_field :par15 %><br>
+	<div id="hole-15">
+		<%= f.label :hole_15  %><br>
+		<%= f.text_field :hole15 %><br>
+		<%= f.label :par_15 %><br>
+		<%= f.text_field :par15 %><br>
+	</div>
 
-	<%= f.label :hole_16  %><br>
-	<%= f.text_field :hole16 %><br>
-	<%= f.label :par_16 %><br>
-	<%= f.text_field :par16 %><br>
+	<div id="hole-16">
+		<%= f.label :hole_16  %><br>
+		<%= f.text_field :hole16 %><br>
+		<%= f.label :par_16 %><br>
+		<%= f.text_field :par16 %><br>
+	</div>
 
-	<%= f.label :hole_17  %><br>
-	<%= f.text_field :hole17 %><br>
-	<%= f.label :par_17 %><br>
-	<%= f.text_field :par17 %><br>
+	<div id="hole-17">
+		<%= f.label :hole_17  %><br>
+		<%= f.text_field :hole17 %><br>
+		<%= f.label :par_17 %><br>
+		<%= f.text_field :par17 %><br>
+	</div>
 
-	<%= f.label :hole_18  %><br>
-	<%= f.text_field :hole18 %><br>
-	<%= f.label :par_18 %><br>
-	<%= f.text_field :par8 %><br>
+	<div id="hole-18">
+		<%= f.label :hole_18  %><br>
+		<%= f.text_field :hole18 %><br>
+		<%= f.label :par_18 %><br>
+		<%= f.text_field :par8 %><br>
+		<div>
 
-	<%= f.label :total  %><br>
-	<%= f.text_field :total %><br>
-	<%= f.label :Par %><br>
-	<%= f.text_field :TotalPar %><br>
-	<br>
+	<div id="all-holes">
+		<%= f.label :total  %><br>
+		<%= f.text_field :total %><br>
+		<%= f.label :Par %><br>
+		<%= f.text_field :TotalPar %><br>
+		</div>
+		<br>
 </div>
 	<%= f.submit %>
 

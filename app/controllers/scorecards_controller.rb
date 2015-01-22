@@ -1,5 +1,5 @@
 class ScorecardsController < ApplicationController
-  
+
   #undo after user & sessions set up. Don't want to have to
   # login every time trying to create new scorecard
   # before_action :require_login
@@ -15,7 +15,7 @@ class ScorecardsController < ApplicationController
   # end
  
   def index
-    @scorecards = Scorecard.order(:created_at)
+    @scorecards = Scorecard.order(:created_at :desc)
   end
 
   def show
@@ -60,7 +60,8 @@ class ScorecardsController < ApplicationController
   def destroy
     @scorecard = Scorecard.find(params[:id])
     @scorecard.destroy
-    render json: @scorecard
+    # render json: @scorecard
+    redirect_to root_path
   end
 
   private 
