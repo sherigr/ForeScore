@@ -1,4 +1,18 @@
 class ScorecardsController < ApplicationController
+  #undo after user & sessions set up. Don't want to have to
+  # login every time trying to create new scorecard
+  # before_action :require_login
+
+  # private
+
+  # def require_login
+  #   unless logged_in?
+  #     flash(:error) = "You must be logged in to create a scorecard"
+  #     redirect_to new_login_url
+  #     # check on login url
+  #   end
+  # end
+ 
   def index
     @scorecards = Scorecard.order(:created_at)
   end

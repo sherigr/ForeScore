@@ -15,7 +15,8 @@ class SessionsController < ApplicationController
 
 	def destory
 		session[:current_user_id] = nil
-		redirect_to users_path
+		flash[:notice] = "You have successfully logged out."
+		redirect_to root_path
 	end
 end
 
