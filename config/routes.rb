@@ -5,11 +5,12 @@ Rails.application.routes.draw do
   resources :scorecards
   resources :users
   resources :courses
+  resources :sessions, only: [:new, :create, :destroy]
 
-  get 'sessions/new' => 'sessions#new', as: 'login'
-  post 'sessions'    => 'sessions#create'
-  delete 'sessions'  => 'sessions#destroy'
-
+  # get 'sessions/new' => 'sessions#new', as: 'login'
+  # post 'sessions'    => 'sessions#create'
+  # delete 'sessions'  => 'sessions#destroy'
+  
 end
 
   # get 'courses/index'

@@ -2,7 +2,8 @@ class ScorecardsController < ApplicationController
 
   #undo after user & sessions set up. Don't want to have to
   # login every time trying to create new scorecard
-  # before_action :require_login
+  
+  # before_action :require_login, :authenticate
 
   # private
 
