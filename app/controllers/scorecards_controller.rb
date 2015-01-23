@@ -8,9 +8,8 @@ class ScorecardsController < ApplicationController
 
   # def require_login
   #   unless logged_in?
-  #     flash(:error) = "You must be logged in to create a scorecard"
+  #     # flash(:error) = "You must be logged in to create a scorecard"
   #     redirect_to new_login_url
-  #     # check on login url
   #   end
   # end
  
@@ -20,7 +19,7 @@ class ScorecardsController < ApplicationController
 
   def show
     @scorecard = Scorecard.find(params[:id])
-    render :show 
+    render :show
   end
 
   def new
@@ -28,6 +27,19 @@ class ScorecardsController < ApplicationController
     render :new
   end
 
+  # def create
+  #   @scorecard = Scorecard.new(scorecard_params)
+  #   @scorecard.user = current_user
+  #   if @scorecard.save
+  #     redirect_to @scorecard
+  #   else
+  #     render :new
+  #   end
+  # end
+
+#----------------------------------------
+# Prior to adding authentication
+#----------------------------------------
   def create
     @scorecard = Scorecard.create(scorecard_params)
     render json: @scorecard
@@ -42,6 +54,7 @@ class ScorecardsController < ApplicationController
     end
   end
 
+
   # def update
   #   @scorecard = Scorecard.find(params[:id])
   #   @scorecard.update(scorecard_params)
@@ -50,23 +63,54 @@ class ScorecardsController < ApplicationController
 
   def update
     @scorecard = Scorecard.find(params[:id])
-    respond_to do |format|
+    if @scorecard.user !=  current_user
+      redirect_to @scorecard
+    else
       if @scorecard.update(scorecard_params)
-        format.html { redirect_to scorecard_path(@scorecard) }
-        format.json {render json: @scorecard}
+        redirect_to @scorecard
       else
-        format.html { render :edit }
-        format.json {render json: @scorecard }
+        render :edit
       end
     end
   end
 
-  def destroy
-    @scorecard = Scorecard.find(params[:id])
+
+#----------------------------------------
+# Prior to adding authentication
+#----------------------------------------
+  # def update
+  #   @scorecard = Scorecard.find(params[:id])
+  #   respond_to do |format|
+  #     if @scorecard.update(scorecard_params)
+  #       format.html { redirect_to scorecard_path(@scorecard) }
+  #       format.json {render json: @scorecard}
+  #     else
+  #       format.html { render :edit }
+  #       format.json {render json: @scorecard }
+  #     end
+  #   end
+  # end
+
+def destroy
+  @scorecard = Scorecard.find(params[:id])
+  if @scorecard.user != current_user
+    redirect_to @scorecard
+  else
     @scorecard.destroy
-    # render json: @scorecard
-    redirect_to root_path
+    redirect_to scorecard_path
   end
+end
+
+
+#----------------------------------------
+# Prior to adding authentication
+#----------------------------------------
+  # def destroy
+  #   @scorecard = Scorecard.find(params[:id])
+  #   @scorecard.destroy
+  #   # render json: @scorecard
+  #   redirect_to root_path
+  # end
 
   private 
 
