@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
   root 'application#index'
-  # not working, want ForeScore as home link, as: 'ForeScore'
-  # do I need to create a ForeScore Controller?
+  
   resources :scorecards
   resources :users
   resources :courses
-  resources :sessions, only: [:new, :create, :destroy]
+  
+  get 'sessions/new' => 'sessions#new', as: 'login'
+  post 'sessions'    => 'sessions#create'
+  delete 'sessions'  => 'sessions#destroy'
 
-  # get 'sessions/new' => 'sessions#new', as: 'login'
-  # post 'sessions'    => 'sessions#create'
-  # delete 'sessions'  => 'sessions#destroy'
+ # ?? get '/courses/search', to: 'courses#search', as: 'search'
   
 end
 
