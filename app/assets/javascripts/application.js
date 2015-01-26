@@ -24,9 +24,57 @@
 //= require_tree ./backbone/views
 //= require_tree ./templates
 //= require_tree .
-var App = {
-	Models: {}, 
-	Collections: {}, 
-	Views: {}, 
-	Routers: {}
+
+
+// var App = {
+// 	Models: {}, 
+// 	Collections: {}, 
+// 	Views: {}, 
+// 	Routers: {}
+// };
+
+$(document).ready(function() {
+	console.log('creating scorecard');
+	$('')
+});
+
+
+// $(function(){
+// 	$('#new-scorecard').on('click', totalScore);
+
+// });
+// Get all of the scores entered by user
+// add holes 1-18 up
+// Score total = sum of holes
+
+
+// create variable for score entered
+   // text input ().val (Look at p345)
+
+function showScoreCard() {
+
+
 };
+
+// function totalScore() {
+// 	var scoreTotal = document.getElementsbyClassName('.holes');
+// 	var allHoles = holes.length;
+// 		for (var i = 0; i < holes.length; i++) {
+// 			$(totalScore).append('.total-score');
+// 		};
+// };
+
+
+// function totalScore () {
+// 	$.get('.holes').done
+
+// }
+
+
+
+
+
+
+
+
+

@@ -12,7 +12,6 @@ def self.get_location(request_locations)
 	compiled_locations_URL = URI.escape(BASE_URL + locations_string)
 # BASE_URL = 'http://theapi.active.com/golf/GetLocationsForChannel?format=application/jsonnet&channelId=84&api_key=mmyhymr5cuhx9ceeg5pdy7h6'
 	api_response = HTTParty.get(compiled_locations_URL)
-	binding.pry
 end
 
 # BASE_URL = "http://theapi.active.com/golf/84/ListTeetimes?courseId=CourseId&date=Date&api_key=mmyhymr5cuhx9ceeg5pdy7h6"

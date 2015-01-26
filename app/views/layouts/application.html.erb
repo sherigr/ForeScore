@@ -5,26 +5,40 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
-<body>
 
-<nav class="nav">
-<% if session[:current_user_id] %>
- 	Hello, <%= User.find(session[:current_user_id]).username %>])	 | 
- 	<%= link_to 'Log Out', sessions_path, method: :delete %>
- 	<% else %>
- 		<%= link_to 'Sign Up', new_user_path %> |
- 		<%= link_to 'Home', root_path %>   |
- 		<%= link_to 'Log In', login_path %>   |
- 		<%= link_to 'Scorecards', scorecards_path %>
- 		<% end %> 
- 	</nav>
+<body>
+	<div class="container">
+		<div class="col-md-12">
+	<header id="page-header">
+		<h1><a href="/" ></a>ForeScore</h1>
+	</div>
+	<nav>
+	<div class="nav">
+	<% if session[:current_user_id] %>
+
+	 	Hello, <%= User.find(session[:current_user_id]).username %>])	 | 
+	 	<%= link_to 'Log Out', sessions_path, method: :delete %>
+	 	<% else %>
+	 		<%= link_to 'Sign Up', new_user_path %> <br>
+	 		<%= link_to 'Home', root_path %>  <br> 
+	 		<%= link_to 'Log In', login_path %>  <br> 
+	 		<%= link_to 'Scorecards', scorecards_path %>  <br>
+	 		<% end %> 
+		 	</nav>
+	 	</div>
+ 	</header>
+	<hr>
+
+	 	
+
 
 <br>
 
 
 
 <%= yield %>
-
-</body>
+		</div>
+	</body>
 </html>

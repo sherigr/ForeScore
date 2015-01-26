@@ -1,3 +1,5 @@
+<div class="container">
+
 <div id="new-scorecard">
 <%= form_for (@scorecard) do |f| %> <br>
 
@@ -10,6 +12,7 @@
 </div>
 	<hr>
 
+	<div class="holes">
 	<div class="top-row">
 		<div id="hole-1">
 		<%= f.label :hole_1  %><br>
@@ -139,20 +142,23 @@
 		<%= f.label :par_18 %><br>
 		<%= f.text_field :par8 %><br>
 		<div>
+		</div>
 
+	<div class="total-score">	
 	<div id="all-holes">
 		<%= f.label :total  %><br>
 		<%= f.text_field :total %><br>
 		<%= f.label :Par %><br>
 		<%= f.text_field :TotalPar %><br>
 		</div>
+	</div>
 		<br>
 </div>
 	<%= f.submit %>
 
 <% end %>
 
-
+</div>
 </div>
 
 

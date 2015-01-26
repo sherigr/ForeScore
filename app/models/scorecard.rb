@@ -4,7 +4,6 @@ class Scorecard < ActiveRecord::Base
 	belongs_to :course
 
 	
-def total(hole)
-end
+
 
 end
