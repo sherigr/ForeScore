@@ -17,12 +17,12 @@ end
 # BASE_URL = "http://theapi.active.com/golf/84/ListTeetimes?courseId=CourseId&date=Date&api_key=mmyhymr5cuhx9ceeg5pdy7h6"
 
 
+
+
 # # swap out this ENV in place of the key
 # ENV["Active_Tee_Time_API_Key"] 
 
-# 	def self.api_search
-# 		# Code to talk to the API with the BASE_URL and HTTParty here
-# 	end
+
 
 end
 

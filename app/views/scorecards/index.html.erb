@@ -7,15 +7,20 @@
 </nav>
 
 
-<div>
-	<% @scorecards.each do |card| %>
-	<div class="scorecards" data-id="<%= card.id %>">"
-	<tr>
-		<td><%= link_to 'Date Played', scorecard_path(card) %></td><br>
-		<td><%= link_to 'Course Played', scorecard_path(card) %></td><br>
-		<td><%= link_to 'Edit Scorecard', edit_scorecard_path(card) %></td><br>
-		<td><%= link_to 'Destroy', method: :delete %></td><br>
-	</tr>
-</div>
-	<% end %>
+<!-- div -->
+<table class="table table-striped">
+	<thead>
+	</thead>
+	<tbody>
+		<% @scorecards.each do |card| %>
+			<tr>
+				<td><%= link_to "#{card.courseplayed}", scorecard_path(card) %></td>
+				<td><%= link_to "#{card.date}", scorecard_path(card) %></td>
+				<td><%= link_to 'Edit Scorecard', edit_scorecard_path(card) %></td>
+				<td><%= link_to 'Delete', method: :delete %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<!-- /div -->
 

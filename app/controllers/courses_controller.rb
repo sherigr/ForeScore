@@ -1,9 +1,10 @@
 class CoursesController < ApplicationController
   def index
+    @api_courses = Course.get_location(84)
     @courses = Course.all 
     respond_to do |format| 
       format.html { render :index }
-      format.json { render json: @courses }
+      format.json { render json: @api_courses }
     end
   end
 
@@ -37,3 +38,4 @@ class CoursesController < ApplicationController
 # ADD PRIVATE DEF METHOD
 
 # Use API key like this --> ENV["Active_Tee_Time_API_Key"] 
+end

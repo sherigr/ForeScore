@@ -16,13 +16,13 @@ class ScorecardsController < ApplicationController
  
   def index
     @scorecards = Scorecard.order(created_at: :desc)
-    render json: @scorecards 
+    # render json: @scorecards 
   end
 
   def show
     @scorecard = Scorecard.find(params[:id])
-    # render :show
-    render json: @scorecard
+    render :show
+    # render json: @scorecard
   end
 
   def new
@@ -58,6 +58,10 @@ class ScorecardsController < ApplicationController
     end
   end
 
+  def total_score
+    Scorecard.total_score
+    render json: @scorecard
+  end
 
   # def update
   #   @scorecard = Scorecard.find(params[:id])

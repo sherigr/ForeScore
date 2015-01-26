@@ -18,14 +18,17 @@
 	<div class="nav">
 	<% if session[:current_user_id] %>
 
+	<nav>
+		<ul>
 	 	Hello, <%= User.find(session[:current_user_id]).username %>])	 | 
 	 	<%= link_to 'Log Out', sessions_path, method: :delete %>
 	 	<% else %>
-	 		<%= link_to 'Sign Up', new_user_path %> <br>
-	 		<%= link_to 'Home', root_path %>  <br> 
-	 		<%= link_to 'Log In', login_path %>  <br> 
-	 		<%= link_to 'Scorecards', scorecards_path %>  <br>
+	 		<li><%= link_to 'Sign Up', new_user_path %> <br></li>
+	 		<li><%= link_to 'Home', root_path %></li>  <br> 
+	 		<li><%= link_to 'Log In', login_path %></li>  <br> 
+	 		<li><%= link_to 'Scorecards', scorecards_path %></li>  <br>
 	 		<% end %> 
+			 	</ul>
 		 	</nav>
 	 	</div>
  	</header>
