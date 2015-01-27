@@ -59,7 +59,7 @@ class ScorecardsController < ApplicationController
   end
 
   def total_score
-    Scorecard.total_score
+    @scorecard = Scorecard.total_score(params[:id])
     render json: @scorecard
   end
 

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post 'sessions'    => 'sessions#create'
   delete 'sessions'  => 'sessions#destroy'
 
- # ?? get '/courses/search', to: 'courses#search', as: 'search'
+ get '/courses/search', to: 'courses#search', as: 'search'
   
 end
 
