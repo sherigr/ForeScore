@@ -4,15 +4,15 @@ class Scorecard < ActiveRecord::Base
 	belongs_to :course
 
 	def total_score
-		total_score = (self.hole1 + self.hole2 + self.hole3 + self.hole4 + self.hole5 + self.hole6 + 
-		self.hole7 + self.hole8 + self.hole9 + self.hole10 + self.hole11 + self.hole12 + self.hole13 +
-		self.hole14 + self.hole15 + self.hole16 + self.hole17 + self.hole18)
+		total_score = (self.hole1.to_i + self.hole2.to_i + self.hole3.to_i + self.hole4.to_i + self.hole5.to_i + self.hole6.to_i + 
+		self.hole7.to_i + self.hole8.to_i + self.hole9.to_i + self.hole10.to_i + self.hole11.to_i + self.hole12.to_i + self.hole13.to_i +
+		self.hole14.to_i + self.hole15.to_i + self.hole16.to_i + self.hole17.to_i + self.hole18.to_i)
 	end
 
 	def total_par
-		total_par = (self.par1 + self.par2 + self.par3 + self.par4 + self.par5 + self.par6 + 
-		self.par7 + self.par8 + self.par9 + self.par10 + self.par11 + self.par12 + self.par13 +
-		self.par14 + self.par15 + self.par16 + self.par17 + self.par18)
+		total_par = (self.par1.to_i + self.par2.to_i + self.par3.to_i + self.par4.to_i + self.par5.to_i + self.par6.to_i + 
+		self.par7.to_i + self.par8.to_i + self.par9.to_i + self.par10.to_i + self.par11.to_i + self.par12.to_i + self.par13.to_i +
+		self.par14.to_i + self.par15.to_i + self.par16.to_i + self.par17.to_i + self.par18.to_i)
 	end
 
 # def total_score
