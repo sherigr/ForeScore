@@ -59,7 +59,14 @@ class ScorecardsController < ApplicationController
   end
 
   def total_score
-    @scorecard = Scorecard.total_score(params[:id])
+    @scorecard = Scorecard.find(params[:id])
+    @total = @scorecard.total_score()
+    render json: @scorecard
+  end
+
+  def total_par
+    @scorecard = Scorecard.find(params[:id])
+    @TotalPar = @scorecard.total_par()
     render json: @scorecard
   end
 
