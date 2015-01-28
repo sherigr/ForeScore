@@ -5,6 +5,7 @@
 </div> 
  -->
 <!-- div -->
+<div class="container">
 <table class="table table-striped">
 	<thead>
 	</thead>
@@ -15,10 +16,13 @@
 				<td><%= link_to "#{card.courseplayed}", scorecard_path(card) %></td>
 				<td><%= link_to "#{card.date}", scorecard_path(card) %></td>
 				<td><%= link_to 'Edit Scorecard', edit_scorecard_path(card) %></td>
+				<!-- <td><%= link_to 'New Scorecard', new_scorecard_path(card) %></td> -->
 				<td><%= link_to 'Delete', method: :delete %></td>
 			</tr>
 		<% end %>		
 	</tbody>
 </table>
+
+</div>
 <!-- /div -->
 

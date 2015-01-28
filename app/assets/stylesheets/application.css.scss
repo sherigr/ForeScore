@@ -48,12 +48,14 @@ header {
 /*}*/
 
 
-/*body {
+body {
 	background: image-url("highResImage.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: center; 
+	/*background-repeat: no-repeat;*/
+	opacity: 10;
 	height: 100px;
 	width: 100px
-}*/
+}
 
 
