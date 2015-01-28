@@ -9,39 +9,24 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class="col-md-12">
-	<header id="page-header">
-		<h1><a href="/" ></a>ForeScore</h1>
-	</div>
-	<nav>
-	<div class="nav">
-	<% if session[:current_user_id] %>
-
-	<nav>
-		<ul>
-	 	Hello, <%= User.find(session[:current_user_id]).username %>])	 | 
-	 	<%= link_to 'Log Out', sessions_path, method: :delete %>
-	 	<% else %>
-	 		<li><%= link_to 'Sign Up', new_user_path %> <br></li>
-	 		<li><%= link_to 'Home', root_path %></li>  <br> 
-	 		<li><%= link_to 'Log In', login_path %></li>  <br> 
-	 		<li><%= link_to 'Scorecards', scorecards_path %></li>  <br>
-	 		<% end %> 
-			 	</ul>
-		 	</nav>
-	 	</div>
- 	</header>
-	<hr>
-
-	 	
-
-
-<br>
-
-
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+  		<h1><a href="/" >ForeScore</a></h1>
+    </div>
+		<ul class="nav navbar-nav navbar-right">
+    <% if session[:current_user_id] %>
+  	 	<li>Hello, <%= User.find(session[:current_user_id]).username %></li>
+  	 	<li><%= link_to 'Log Out', sessions_path, method: :delete %></li>
+   	<% else %>
+	 		<li><%= link_to 'Sign Up', new_user_path %></li>
+	 		<li><%= link_to 'Home', root_path %></li> 
+	 		<li><%= link_to 'Log In', login_path %></li>
+	 		<li><%= link_to 'Scorecards', scorecards_path %></li>
+  	<% end %> 
+		</ul>
+ 	</nav>
 
 <%= yield %>
-		</div>
-	</body>
+
+</body>
 </html>
