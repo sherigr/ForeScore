@@ -1,17 +1,15 @@
 <h1>Scorecards</h1>
 
-<nav class="scorecard-page">
-	<%= link_to 'Home', root_path %><br>
-	<%= link_to 'New Score Card', new_scorecard_path %><br>
-	
-</nav>
-
-
+<!-- <div class="new-scorecard-button">
+ button_to 'New Scorecard', new_scorecards_path %>
+</div> 
+ -->
 <!-- div -->
 <table class="table table-striped">
 	<thead>
 	</thead>
 	<tbody>
+		
 		<% @scorecards.each do |card| %>
 			<tr>
 				<td><%= link_to "#{card.courseplayed}", scorecard_path(card) %></td>

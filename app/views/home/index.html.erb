@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>ForeScoreApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-</head>
-
 <body>
 	 <div class="navbar-wrapper">
       <div class="container">
@@ -42,7 +32,9 @@
           		<li>
           			<%= link_to 'Scorecards', scorecards_path %>
           			</li>
-          			
+          			<li>
+          			<%= link_to 'New Scorecard', new_scorecards_path %>
+          			</li>
           			<% end %>
           </ul>
         </div>
@@ -52,4 +44,3 @@
 	
 		<%= yield %>
 		</body>
-	</html>
