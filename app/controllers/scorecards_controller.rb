@@ -30,16 +30,6 @@ class ScorecardsController < ApplicationController
     render :new
   end
 
-  # This isn't working
-  # def create
-  #   @scorecard = Scorecard.new(scorecard_params)
-  #   @scorecard.user = current_user
-  #   if @scorecard.save
-  #     redirect_to @scorecard
-  #   else
-  #     render :new
-  #   end
-  # end
 
 #----------------------------------------
 # Prior to adding authentication
@@ -70,26 +60,6 @@ class ScorecardsController < ApplicationController
     render json: @scorecard
   end
 
-  # def update
-  #   @scorecard = Scorecard.find(params[:id])
-  #   @scorecard.update(scorecard_params)
-  #   render json: @scorecard
-  # end
-
-  # def update
-  #   @scorecard = Scorecard.find(params[:id])
-  #   if @scorecard.user !=  current_user
-  #     redirect_to @scorecard
-  #   else
-  #     if @scorecard.update(scorecard_params)
-  #       redirect_to @scorecard
-  #     else
-  #       render :edit
-  #     end
-  #   end
-  # end
-
-
 #----------------------------------------
 # Prior to adding authentication
 #----------------------------------------
@@ -118,16 +88,6 @@ def destroy
 end
 
 
-#----------------------------------------
-# Prior to adding authentication
-#----------------------------------------
-  # def destroy
-  #   @scorecard = Scorecard.find(params[:id])
-  #   @scorecard.destroy
-  #   # render json: @scorecard
-  #   redirect_to root_path
-  # end
-
   private 
 
   def scorecard_params
@@ -138,13 +98,47 @@ end
   end
 
 end
+#----------------------------------------
+# Prior to adding authentication
+#----------------------------------------
+  # def destroy
+  #   @scorecard = Scorecard.find(params[:id])
+  #   @scorecard.destroy
+  #   # render json: @scorecard
+  #   redirect_to root_path
+  # end
 
 
-#this goes wherever I'm calling on API
-# ENV["Active_Tee_Time_API_Key"]
 
+  # This isn't working
+  # def create
+  #   @scorecard = Scorecard.new(scorecard_params)
+  #   @scorecard.user = current_user
+  #   if @scorecard.save
+  #     redirect_to @scorecard
+  #   else
+  #     render :new
+  #   end
+  # end
 
+  # def update
+  #   @scorecard = Scorecard.find(params[:id])
+  #   @scorecard.update(scorecard_params)
+  #   render json: @scorecard
+  # end
 
+  # def update
+  #   @scorecard = Scorecard.find(params[:id])
+  #   if @scorecard.user !=  current_user
+  #     redirect_to @scorecard
+  #   else
+  #     if @scorecard.update(scorecard_params)
+  #       redirect_to @scorecard
+  #     else
+  #       render :edit
+  #     end
+  #   end
+  # end
 
 
 
