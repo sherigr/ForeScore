@@ -36,7 +36,7 @@ class ScorecardsController < ApplicationController
 #----------------------------------------
   def create
     @scorecard = Scorecard.create(scorecard_params)
-    render json: @scorecard
+    redirect_to @scorecard
   end
 
   def edit
