@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'application#index'
+  # root 'application#index'
+  root 'home#index'
   
   resources :scorecards
   resources :users

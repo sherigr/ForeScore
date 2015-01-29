@@ -46,8 +46,27 @@ body {
 	background-position: center; 
 }
 
+.container:first-of-type {
+	max-width: 1024px;
+	background-color: white;
+}
+
 #scorecard {
 	height: 100px;
 	width: 100px;
 }
+
+.row {
+	padding: 20px;
+	
+	.image-link {
+		background: image-url("scorecard.jpg");
+		background-size: cover;
+		background-position: center;
+		margin: 0 auto;
+		width: 400px;
+		height: 500px;
+	}
+}
+
 

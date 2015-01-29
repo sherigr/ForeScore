@@ -22,11 +22,15 @@
 	 		<li><%= link_to 'Home', root_path %></li> 
 	 		<li><%= link_to 'Log In', login_path %></li>
 	 		<li><%= link_to 'Scorecards', scorecards_path %></li>
+      <li><%= link_to 'Create New Scorecard', new_scorecard_path %></li>
   	<% end %> 
 		</ul>
  	</nav>
 
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
+
 
 </body>
 </html>
