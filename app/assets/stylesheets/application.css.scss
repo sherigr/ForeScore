@@ -80,6 +80,23 @@ body {
 #forescore {
 	font-family: 'Lobster', cursive;
 }
+#footer {
+	background-color: beige;
+}
 
+.navbar.navbar-inverse.navbar-fixed-bottom {
+	background-color: beige;
+	margin: 0 0 0 0px;
+	width: 10%;
+}
 
+.navbar-inner.navbar-content-center{
+	background-color: beige;
+	color: darkgreen;
+	padding: 0 0 5px 0;
+}
 
+p.text-muted {
+	color: darkgreen;
+
+}
