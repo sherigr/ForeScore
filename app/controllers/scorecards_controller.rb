@@ -77,13 +77,13 @@ class ScorecardsController < ApplicationController
   end
 
 def destroy
-  @scorecard = Scorecard.find(params[:id])
+  @scorecard = Scorecard.find(params[:id]) 
   if @scorecard.user != current_user
     redirect_to @scorecard
   else
     @scorecard.destroy
-    # redirect_to scorecard_path
-    render json: @scorecards 
+    redirect_to scorecard_path
+    # render json: @scorecards 
   end
 end
 
