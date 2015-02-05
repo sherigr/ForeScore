@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
  
-  def index
-    @users = User.all 
-  end
+  # def index
+  #   @users = User.all 
+  # end
 
   def show
       @user = User.find(params[:id])
@@ -15,7 +15,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_path    
+  #     # redirect_to root_path   
+      redirect_to new_scorecard_path 
     else
       render :new
     end
@@ -66,7 +67,7 @@ end
 
   #   respond_to do |format|
   #     if @user.save
-  #       format.html { redirect_to root_path, success: "Thanks for signing up" }
+  #       format.html { redirect_to new_scorecard_path, success: "Thanks for signing up" }
   #       format.json {render json: @user }
   #     else
   #       format.html { render :new }

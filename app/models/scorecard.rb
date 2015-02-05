@@ -15,48 +15,7 @@ class Scorecard < ActiveRecord::Base
 		self.par14.to_i + self.par15.to_i + self.par16.to_i + self.par17.to_i + self.par18.to_i)
 	end
 
-	# def self.search(search)
-	# 	if search
-	# 		find(:all, :conditions => ['courseplayed LIKE ?', "%#{search}%"])
-	# 	# search_name = self.name 
-	# 	else
- #    find(:all)
- #  end
-	# end
-
-
-# 	def self.search(search)
-#   if search
-#     find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
-#   else
-#     find(:all)
-#   end
-# end
-
-
-# def total_score
-# 		total_score = (":hole1" + ":hole2" + ":hole3" + ":hole4" + ":hole5" + ":hole6" + 
-# 		":hole7" + ":hole8" + ":hole9" + ":hole10" + ":hole11" + ":hole12" + ":hole13" +
-# 		":hole14" + ":hole15" + ":hole16" + ":hole17" + ":hole18")
-# 	end
-
-# 	def total_par
-# 		total_par = (":par1" + ":par2" + ":par3" + ":par4" + ":par5" + ":par6" + 
-# 		":par7" + ":par8" + ":par9" + ":par10" + ":par11" + ":par12" + ":par13" +
-# 		":par14" + ":par15" + ":par16" + ":par17" + ":par18")
-# 	end
-
-	# def self.total_score
-	# 	total_score = (hole1 + hole2 + hole3 + hole4 + hole5 + hole6 + 
-	# 	hole7 + hole8 + hole9 + hole10 + hole11 + hole12 + hole13 +
-	# 	hole14 + hole15 + hole16 + hole17 + hole18)
-	# end
-
-	# def self.total_par
-	# 	total_par = (par1 + par2 + par3 + par4 + par5 + par6 + 
-	# 	par7 + par8 + par9 + par10 + par11 + par12 + par13 +
-	# 	par14 + par15 + par16 + par17 + par18)
-	# end
+	
 
 end
 
