@@ -14,7 +14,7 @@
 
 <table class="table table-striped">
   <tbody>
-    <tr>
+    <tr class="scorecard-table-hole">
       <td><%= @scorecard.hole1.to_i %><p><i>Hole 1</i></p></td>     
       <td><%= @scorecard.hole2.to_i %><p><i>Hole 2</i></p></td>
       <td><%= @scorecard.hole3.to_i %><p><i>Hole 3</i></p></td>
@@ -25,7 +25,7 @@
       <td><%= @scorecard.hole8.to_i %><p><i>Hole 8</i></p></td>
       <td><%= @scorecard.hole9.to_i %><p><i>Hole 9</i></p></td>
     </tr>
-    <tr>
+    <tr class="scorecard-table-par">
       <td><%= @scorecard.par1.to_i %><p><i>Par 1</i></p></td>
       <td><%= @scorecard.par2.to_i %><p><i>Par 2</i></p></td>
       <td><%= @scorecard.par3.to_i %><p><i>Par 3</i></p></td>
@@ -37,7 +37,7 @@
       <td><%= @scorecard.par9.to_i %><p><i>Par 9</i></p></td>
     </tr>
 
-    <tr>
+    <tr class="scorecard-table-hole">
       <td><%= @scorecard.hole10.to_i %><p><i>Hole 10</i></p></td> 
       <td><%= @scorecard.hole11.to_i %><p><i>Hole 11</i></p></td> 
       <td><%= @scorecard.hole12.to_i %><p><i>Hole 12</i></p></td> 
@@ -48,7 +48,7 @@
       <td><%= @scorecard.hole17.to_i %><p><i>Hole 17</i></p></td> 
       <td><%= @scorecard.hole18.to_i %><p><i>Hole 18</i></p></td> 
     </tr>
-    <tr>
+    <tr class="scorecard-table-par">
       <td><%= @scorecard.par10.to_i %><p><i>Par 10</i></p></td>
       <td><%= @scorecard.par11.to_i %><p><i>Par 11</i></p></td>
       <td><%= @scorecard.par12.to_i %><p><i>Par 12</i></p></td>
@@ -60,11 +60,11 @@
       <td><%= @scorecard.par18.to_i %><p><i>Par 18</i></p></td>
     </tr>
     <tr>
-    <td><p><strong>Total Score</strong></p></td>
+    <td class="scorecard-table-hole"><p><strong>Total Score</strong></p></td>
 		<td><p><strong><%= @scorecard.total_score.to_i %></strong></p></td>
 
-		<td><p><strong>Total Par</strong></p></td>
-		<td><p><strong><%= @scorecard.total_par.to_i %></strong></p></td>
+		<td class="scorecard-table-par"><p><strong>Total Par</strong></p></td>
+		<td ><p><strong><%= @scorecard.total_par.to_i %></strong></p></td>
 	</tr>
 
   </tbody>
