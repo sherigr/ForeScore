@@ -82,7 +82,7 @@ class ScorecardsController < ApplicationController
       redirect_to @scorecard
     else
       @scorecard.destroy
-      redirect_to scorecard_path
+      redirect_to scorecards_path
       # render json: @scorecards 
     end
   end
@@ -95,16 +95,10 @@ class ScorecardsController < ApplicationController
     params.require(:scorecard).permit(:date, :courseplayed, :hole1, :hole2, :hole3, :hole4, :hole5, 
       :hole6, :hole7, :hole8, :hole9, :hole10, :hole11, :hole12, :hole13, :hole14, :hole15, :hole16, 
       :hole17, :hole18, :total, :par1, :par2, :par3, :par4, :par5, :par6, :par7, :par8, :par9, :par10, 
-      :par11, :par12, :par13, :par14, :par15, :par16, :par17, :par18, :TotalPar)
+      :par11, :par12, :par13, :par14, :par15, :par16, :par17, :par18, :TotalPar, :user_id)
   end
 
- # 2/5 this doesn't resolve "back" button break
-  # def scorecard_params
-  #   params.require(:scorecard).permit(:date, :courseplayed, :hole1.to_i, :hole2.to_i, :hole3.to_i, :hole4.to_i, :hole5.to_i, 
-  #     :hole6.to_i, :hole7.to_i, :hole8.to_i, :hole9.to_i, :hole10.to_i, :hole11.to_i, :hole12.to_i, :hole13.to_i, :hole14.to_i, :hole15.to_i, :hole16.to_i, 
-  #     :hole17.to_i, :hole18.to_i, :total.to_i, :par1.to_i, :par2.to_i, :par3.to_i, :par4.to_i, :par5.to_i, :par6.to_i, :par7.to_i, :par8.to_i, :par9.to_i, :par10.to_i, 
-  #     :par11.to_i, :par12.to_i, :par13.to_i, :par14.to_i, :par15.to_i, :par16.to_i, :par17.to_i, :par18.to_i, :TotalPar.to_i)
-  # end
+ 
 
 end
 #----------------------------------------

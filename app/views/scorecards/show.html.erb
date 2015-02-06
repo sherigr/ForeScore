@@ -2,10 +2,13 @@
 
 <div class="play-info">
   <h3>
+
 <%= @scorecard.date %><br>
 <%= @scorecard.courseplayed %><br>
 </h3>
 </div>
+
+<%= button_to 'Back', scorecards_path, method: :get %>
 <hr>
 
 <% render 'form' %>
@@ -72,8 +75,9 @@
   </tbody>
 </table>
 
-<!-- this is breaking -->
-<%= button_to 'Back', scorecards_path, method: :get %>
+
+ <%= button_to 'Edit', edit_scorecard_path(@scorecard), method: :get %>
+
 
 
 

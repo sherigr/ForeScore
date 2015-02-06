@@ -3,6 +3,7 @@
 <div id="new-scorecard">
 <%= form_for (@scorecard) do |f| %> <br>
 
+<%= f.hidden_field :user_id, :value =>session[:current_user_id] %> 
 
 <div class="play-info">
 	<%= f.label :date %></td><br>
