@@ -1,6 +1,8 @@
 <h1>Need to edit your Scorecard?</h1>
 
+<div class="show-scorecard"></div>
+
 <%= render 'form' %>
 
 
-<p><%= link_to 'Delete', scorecard_path(@scorecard), method: :delete %></p>
+<p><%= button_to 'Delete Scorecard', scorecard_path(@scorecard), method: :delete %></p>

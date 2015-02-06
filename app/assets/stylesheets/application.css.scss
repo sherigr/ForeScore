@@ -39,12 +39,20 @@ nav.navbar.navbar-default {
 	margin: 20px 20px 0 0;
 }
 
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
 
 body {
 	background: image-url("highResImage.jpg");
 	background-size: cover;
 	background-position: center; 
 	padding-bottom: 70px;
+}
+
+h3 {
+	font-family: 'Avant Garde', 'Century Gothic', sans-serif;
+	font-size: 20px;
 }
 
 .container:first-of-type {
@@ -107,12 +115,22 @@ body {
 
 p.text-muted {
 	color: darkgreen;
-
 }
 
 .hello {
 /*	text-align: right;
 	top-padding: 30px;*/
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.play-info {
+	font-family: 'Avant Garde', 'Century Gothic', sans-serif;
+/*	font-size: 20px;*/
+}
+
+.show-scorecard {
+	font-size: 14px;
+	font-family: sans-serif;
 }
 
 .scorecard-table-hole {
@@ -123,9 +141,13 @@ p.text-muted {
 	color: darkgreen;
 }
 
+.container {
+	box-shadow: 10px 10px 10px #808080;
+}
 
-
-
+a:hover {
+	color: green;
+}
 
 
 
