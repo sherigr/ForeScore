@@ -4,5 +4,5 @@
 
 <%= render 'form' %>
 
-
-<p><%= link_to 'Delete Scorecard', scorecard_path(@scorecard), method: :delete %></p>
+<br>
+<p><%= link_to 'Delete Scorecard', scorecard_path(@scorecard), method: :delete, data: {confirm: 'Are you sure?'} %></p>
