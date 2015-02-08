@@ -15,7 +15,15 @@ class Scorecard < ActiveRecord::Base
 		self.par14.to_i + self.par15.to_i + self.par16.to_i + self.par17.to_i + self.par18.to_i)
 	end
 
-	
+	# def self.search_by_date(date)
+	# 	response = make_request("s=#{date}")
+	# 	return JSON.parse(response)['Search']
+	# end
+
+	# def self.search_by_course(course)
+	# 	response = make_request("s=#{course}")
+	# 	return JSON.parse(response)['Search']	
+	# end
 
 end
 

@@ -87,7 +87,6 @@ class ScorecardsController < ApplicationController
     end
   end
 
- 
 
   private 
 
