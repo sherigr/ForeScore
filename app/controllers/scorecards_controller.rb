@@ -15,11 +15,15 @@ class ScorecardsController < ApplicationController
   end
  
   def index
-    @scorecards = Scorecard.order(created_at: :desc)
+    # binding.pry
+    if current_user
+      @scorecards = Scorecard.where(id:current_user.id).order(created_at: :desc)
+    # @scorecards = Scorecard.order(created_at: :desc)
+  else
     # added for authentication
     # if @scorecard.user != current_user
-    #   redirect_to root_path
-    # end
+      redirect_to new_user_path
+    end
     # render json: @scorecards 
   end
 
@@ -44,12 +48,14 @@ class ScorecardsController < ApplicationController
   end
 
   def edit
+    # if current_user
     @scorecard = Scorecard.find(params[:id])
-    if @scorecard.user != current_user
-      redirect_to @scorecard
-    else
+    # if @scorecard.user != current_user
+    # else
+    #   redirect_to @scorecard
+    # else
     render :edit
-    end
+    # end
   end
 
   def total_score
