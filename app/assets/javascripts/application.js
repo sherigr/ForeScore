@@ -29,10 +29,7 @@
 // 	Routers: {}
 // };
 
-$(document).ready(function() {
-	console.log('creating scorecard');
-	$('')
-});
+
 
 
 
