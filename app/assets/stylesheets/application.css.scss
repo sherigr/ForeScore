@@ -65,19 +65,6 @@ h3 {
 	width: 100px;
 }
 
-/*.row {
-	padding: 20px;
-	
-	.image-link {
-		background: image-url("scorecard.jpg");
-		background-size: cover;
-		background-position: center;
-		margin: 0 auto;
-		width: 400px;
-		height: 500px;
-	}
-}
-*/
 
 .container .welcome {
 	font-family: sans-serif;
@@ -86,19 +73,13 @@ h3 {
 	border-radius: 10px;
 }
 
-#forescore {
+/*#forescore {
 	font-family: 'Lobster', cursive;
 }
 #footer {
 	background-color: beige;
-}
-
-/*.navbar.navbar-inverse.navbar-fixed-bottom {
-	background-color: beige;
-	margin: 0 0 0 0px;
-	width: 10%;
-	min-height: 5px;
 }*/
+
 
 .navbar.navbar-inverse.navbar-fixed-bottom {
 	background-color: beige;
@@ -110,7 +91,7 @@ h3 {
 .navbar-inner.navbar-content-center{
 	background-color: beige;
 	color: darkgreen;
-	padding: 0 0 5px 0;
+	padding: 0 0 0 0;
 }
 
 p.text-muted {
@@ -146,8 +127,13 @@ p.text-muted {
 }
 
 a:hover {
-	color: green;
+	color: darkgreen;
 }
 
-
+/*.container .login {
+	width: 50%;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: auto;
+}*/
 

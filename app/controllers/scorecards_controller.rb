@@ -16,6 +16,10 @@ class ScorecardsController < ApplicationController
  
   def index
     @scorecards = Scorecard.order(created_at: :desc)
+    # added for authentication
+    # if @scorecard.user != current_user
+    #   redirect_to root_path
+    # end
     # render json: @scorecards 
   end
 
