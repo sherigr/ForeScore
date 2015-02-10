@@ -15,9 +15,10 @@ class ScorecardsController < ApplicationController
   end
  
   def index
-   
+   # binding.pry
+
     if current_user
-      @scorecards = Scorecard.where(id:current_user.id).order(created_at: :desc)
+      @scorecards = Scorecard.where(user_id:current_user.id).order(created_at: :desc)    
     else
       redirect_to new_user_path
     end
@@ -29,8 +30,12 @@ class ScorecardsController < ApplicationController
   end
 
   def new
+    if current_user
     @scorecard = Scorecard.new
     render :new
+    else
+      redirect_to new_user_path
+    end
   end
 
   def create

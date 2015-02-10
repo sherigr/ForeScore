@@ -3,11 +3,13 @@ class SessionsController < ApplicationController
 	def new
 	end
 
+	#login
 	def create
 		user = User.find_by(username: params[:username])
 		if user && user.authenticate(params[:password])
 			session[:current_user_id] = user.id 
-			redirect_to users_path
+			flash[:notice] ="Welcome back"
+			redirect_to scorecards_path
 		else
 			flash[:notice] = "Hmm, something's not right. Please check your email and password"
 			redirect_to login_path

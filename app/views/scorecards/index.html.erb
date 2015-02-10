@@ -1,6 +1,8 @@
 <h1>Scorecards</h1>
 
-
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %> 
 
 <!-- div -->
 <table class="table table-striped">
@@ -26,3 +28,5 @@
 </div> 
 
 
+<!-- show.html.erb
+  
