@@ -9,14 +9,11 @@ class ScorecardsController < ApplicationController
 
   def require_login
     unless logged_in?
-      # flash(:error) = "You must be logged in to create a scorecard"
       redirect_to new_login_url
     end
   end
  
   def index
-   # binding.pry
-
     if current_user
       @scorecards = Scorecard.where(user_id:current_user.id).order(created_at: :desc)    
     else
@@ -44,14 +41,8 @@ class ScorecardsController < ApplicationController
   end
 
   def edit
-    # if current_user
     @scorecard = Scorecard.find(params[:id])
-    # if @scorecard.user != current_user
-    # else
-    #   redirect_to @scorecard
-    # else
     render :edit
-    # end
   end
 
   def update
@@ -74,7 +65,6 @@ class ScorecardsController < ApplicationController
     else
       @scorecard.destroy
       redirect_to scorecards_path
-      # render json: @scorecards 
     end
   end
 
@@ -89,6 +79,11 @@ class ScorecardsController < ApplicationController
     @TotalPar = @scorecard.total_par()
     render json: @scorecard
   end
+
+  def search
+
+  end
+
 
 
   private 

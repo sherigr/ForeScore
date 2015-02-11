@@ -16,15 +16,6 @@ class Course < ActiveRecord::Base
 
 	# BASE_URL = "http://theapi.active.com/golf/84/ListTeetimes?courseId=CourseId&date=Date&api_key=mmyhymr5cuhx9ceeg5pdy7h6"
 
-	# NOT WORKING,
-	# def self.get_course(course_search)
-	# 	course_response = "GetLocationsForChannel?channelId=#{course_search}&api_key=#{ENV['Active_Tee_Time_API_Key']}"
-	# 	search_response_URL = URI.escape(BASE_URL + course_response)
-	# 	api_response = HTTParty.get(search_response_URL)
-	# end
-
-	
-
 
 
 end

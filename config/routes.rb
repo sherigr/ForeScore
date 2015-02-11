@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   delete 'sessions'  => 'sessions#destroy'
 
  get '/courses/search', to: 'courses#search', as: 'search'
+
+ get '/scorecards/search' => 'scorecards#search'
   
 end
 

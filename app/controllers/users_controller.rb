@@ -1,8 +1,5 @@
 class UsersController < ApplicationController
  
-  # def index
-  #   @users = User.all 
-  # end
 
   def show
       @user = User.find(params[:id])
@@ -62,18 +59,4 @@ class UsersController < ApplicationController
 end
 
 
- # Treehouse version
-  # def create
-  #   @user = User.new
-
-  #   respond_to do |format|
-  #     if @user.save
-  #       format.html { redirect_to new_scorecard_path, success: "Thanks for signing up" }
-  #       format.json {render json: @user }
-  #     else
-  #       format.html { render :new }
-  #       format.json { render json: @user.errors}
-  #     end
-  #   end
-  # end
-
+ 
