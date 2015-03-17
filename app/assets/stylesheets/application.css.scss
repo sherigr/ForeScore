@@ -43,10 +43,20 @@ h1 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
+/*#photo{
+	background: image-url("PutterCropped.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 1000px;
+}*/
+
+
 body {
 	background: image-url("highResImage.jpg");
 	background-size: cover;
 	background-position: center; 
+	background-repeat: no-repeat;
 	padding-bottom: 70px;
 }
 
