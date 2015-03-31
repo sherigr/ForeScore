@@ -14,8 +14,13 @@
  *= require_self
  */
 
+ html {
+ 	height: 100%;
+ }
+
 nav.navbar.navbar-default {
 	background-color: beige;
+	margin-bottom: 0;
 }
 
 .navbar-header h1 {
@@ -43,7 +48,7 @@ h1 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
-#photo{
+#background-photo{
 	background: image-url("PutterCropped.jpg");
 	background-size: cover;
 	background-position: center;
@@ -96,6 +101,7 @@ h3 {
 	margin: 0 0 0 0px;
 	width: 10%;
 	max-height: 5px;
+	box-shadow: none;
 }
 
 .navbar-inner.navbar-content-center{

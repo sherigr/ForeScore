@@ -29,10 +29,13 @@
  	</nav>
 
 <!-- adding photo div to remove image from body -->
-  <div id="photo" class="col-md-12"></div>
-    
+  <div id="background-photo" class="col-md-12">
+    <div class="container">
+      <%= yield %>
+    </div>
+  </div>
+  
 
-  <div class="container">
 
     <div id="footer" class="container">
     <nav class="navbar navbar-default navbar-fixed-bottom">
@@ -41,8 +44,6 @@
         </div>
     </nav>
 </div>
-    
-    <%= yield %>
   </div>
 
 
