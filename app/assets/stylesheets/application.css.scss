@@ -14,7 +14,7 @@
  *= require_self
  */
 
- html {
+ html, body{
  	height: 100%;
  }
 
@@ -49,21 +49,23 @@ h1 {
 }
 
 #background-photo{
-	background: image-url("PutterCropped.jpg");
+	background-image: url("PutterCropped.jpg");
+	/*background: image-url("PutterCropped.jpg");*/
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 1000px;
+	/*height: 1000px;*/
+	min-height: 100%;
 }
 
 /* adding phot id to remove image from body */
-body {
-	/*background: image-url("highResImage.jpg");
+/*body {
+	background: image-url("highResImage.jpg");
 	background-size: cover;
 	background-position: center; 
-	background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 	padding-bottom: 70px;
-}
+}*/
 
 h3 {
 	font-family: 'Avant Garde', 'Century Gothic', sans-serif;
@@ -71,9 +73,14 @@ h3 {
 }
 
 .container:first-of-type {
-	max-width: 1024px;
+	max-width: 500px;
+	margin-top: 25px;
+	/*margin-top: 0px;*/
+/* need to change margin-top to 0 to fix white line
+on mobile size but effects the others */
 	background-color: white;
 }
+
 
 #scorecard {
 	height: 100px;
