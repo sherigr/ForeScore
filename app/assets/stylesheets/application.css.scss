@@ -48,6 +48,7 @@ h1 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
+
 #background-photo{
 	background-image: url("PutterCropped.jpg");
 	/*background: image-url("PutterCropped.jpg");*/
@@ -58,14 +59,6 @@ h1 {
 	min-height: 100%;
 }
 
-/* adding phot id to remove image from body */
-/*body {
-	background: image-url("highResImage.jpg");
-	background-size: cover;
-	background-position: center; 
-	background-repeat: no-repeat;
-	padding-bottom: 70px;
-}*/
 
 h3 {
 	font-family: 'Avant Garde', 'Century Gothic', sans-serif;
@@ -75,12 +68,8 @@ h3 {
 .container:first-of-type {
 	max-width: 500px;
 	margin-top: 25px;
-	/*margin-top: 0px;*/
-/* need to change margin-top to 0 to fix white line
-on mobile size but effects the others */
 	background-color: white;
 }
-
 
 #scorecard {
 	height: 100px;
@@ -94,13 +83,6 @@ on mobile size but effects the others */
 	background-color: none;
 	border-radius: 10px;
 }
-
-/*#forescore {
-	font-family: 'Lobster', cursive;
-}
-#footer {
-	background-color: beige;
-}*/
 
 
 .navbar.navbar-inverse.navbar-fixed-bottom {
@@ -122,14 +104,11 @@ p.text-muted {
 }
 
 .hello {
-/*	text-align: right;
-	top-padding: 30px;*/
 	font-family: 'Fjalla One', sans-serif;
 }
 
 .play-info {
 	font-family: 'Avant Garde', 'Century Gothic', sans-serif;
-/*	font-size: 20px;*/
 }
 
 .show-scorecard {
@@ -153,10 +132,5 @@ a:hover {
 	color: darkgreen;
 }
 
-/*.container .login {
-	width: 50%;
-	padding-left: 50px;
-	padding-right: 50px;
-	margin: auto;
-}*/
+
 
